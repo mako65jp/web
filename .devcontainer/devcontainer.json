@@ -1,0 +1,28 @@
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json or the definition README at
+// https://github.com/microsoft/vscode-dev-containers/tree/master/containers/dotnetcore-2.1
+{
+  "name": "C# (.NET Core 2.1)",
+  // "dockerFile": "../backend/Dockerfile",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "backend",
+  "workspaceFolder": "/workspace",
+  //
+  // Uncomment the next line if you want to publish any ports.
+  // ポートを公開する場合は、次の行のコメントを解除します。
+  "appPort": [5000],
+  //
+  // Uncomment the next line if you want to add in default container specific settings.json values
+  // デフォルトのコンテナー固有のsettings.json値に追加する場合は、次の行のコメントを解除します
+  // "settings":  { "workbench.colorTheme": "Quiet Light" },
+  //
+  // Uncomment the next line to run commands after the container is created.
+  // コンテナの作成後にコマンドを実行するには、次の行のコメントを解除します。
+  // "postCreateCommand": "dotnet restore"
+  //
+  // Uncomment the next line to use a non-root user. See https://aka.ms/vscode-remote/containers/non-root-user.
+  // 非rootユーザーを使用するには、次の行のコメントを外します。 https://aka.ms/vscode-remote/containers/non-root-userをご覧ください。
+  // "runArgs": [ "-u", "1000" ],
+  //
+  "extensions": ["ms-vscode.csharp", "eamodio.gitlens"],
+  "shutdownAction": "none"
+}
