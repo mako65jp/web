@@ -6,16 +6,6 @@ volumes:
     driver: local
 
 services:
-  backend:
-    build: backend
-    container_name: backend
-    ports:
-      - '5000:5000'
-    volumes:
-      - ./backend/src:/workspace
-    working_dir: /workspace
-    command: sleep infinity
-    # tty: true
   db:
     build: db
     container_name: database

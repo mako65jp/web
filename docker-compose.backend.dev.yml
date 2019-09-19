@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile
     container_name: backend
     volumes:
-      - ./backend:/root/workspace
+      - ./backend/src:/workspace
       # - ~/.gitconfig:/root/.gitconfig
     # ports:
     #   - 9080:9080
