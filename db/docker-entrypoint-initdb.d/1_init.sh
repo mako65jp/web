@@ -7,13 +7,13 @@ EOSQL
 
 psql -U $POSTGRES_USER $POSTGRES_DB << EOSQL
 CREATE TABLE users(
-  account_id        SERIAL PRIMARY KEY,
-  account_name      VARCHAR(20),
-  email             VARCHAR(100),
-  password    CHAR(64)
+  account_id SERIAL PRIMARY KEY,
+  account_name VARCHAR(20),
+  email VARCHAR(100),
+  password CHAR(64)
 );
 
 CREATE TABLE user_status(
-  status            VARCHAR(20) PRIMARY KEY
+  status VARCHAR(20) PRIMARY KEY
 );
 EOSQL
